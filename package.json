@@ -1,0 +1,13 @@
+{
+  "name": "python-network-vulnerability-scanner",
+  "version": "1.0.0",
+  "description": "Network Vulnerability Scanner — full-stack launcher",
+  "scripts": {
+    "dev":     "concurrently --names \"BACKEND,FRONTEND\" --prefix-colors \"cyan,magenta\" \"npm run backend\" \"npm run frontend\"",
+    "backend":  "cd backend && python main.py",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
